@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="it">
+"<!DOCTYPE html>
+<html lang=\"it\">
 <head>
-<meta charset="UTF-8">
+<meta charset=\"UTF-8\">
 <title>Opexis Digital – NFC AI Landing</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">
 
 <style>
 :root{
@@ -13,16 +13,16 @@
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
-  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-family:system-ui,-apple-system,\"Segoe UI\",sans-serif;
   min-height:100vh;
-  background:url("13.png") center/cover no-repeat fixed;
+  background:url(\"13.png\") center/cover no-repeat fixed;
   display:flex;
   justify-content:center;
   align-items:center;
 }
 
 body::before{
-  content:"";
+  content:\"\";
   position:fixed;
   inset:0;
   background:rgba(2,6,23,.7);
@@ -41,6 +41,7 @@ body::before{
   gap:14px;
   position:relative;
   z-index:1;
+  overflow-y:auto;
 }
 
 header{
@@ -164,14 +165,124 @@ footer{
   font-size:10px;
   color:#94a3b8;
 }
+
+/* TERMINI BUTTON */
+.terms-btn{
+  display:block;
+  width:100%;
+  padding:12px;
+  text-align:center;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:rgba(2,6,23,.6);
+  color:#fff;
+  font-size:12px;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.terms-btn:hover{
+  background:rgba(0,74,173,.3);
+}
+
+/* MODAL */
+.modal-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.85);
+  z-index:1000;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.modal-overlay.active{
+  display:flex;
+}
+
+.modal{
+  background:rgba(2,8,23,.95);
+  border:1px solid var(--line);
+  border-radius:18px;
+  max-width:500px;
+  width:100%;
+  max-height:85vh;
+  display:flex;
+  flex-direction:column;
+  backdrop-filter:blur(15px);
+}
+
+.modal-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 20px;
+  border-bottom:1px solid var(--line);
+}
+
+.modal-header h3{
+  font-size:16px;
+  color:#fff;
+}
+
+.modal-close{
+  background:none;
+  border:none;
+  color:#fff;
+  font-size:24px;
+  cursor:pointer;
+  padding:0;
+  line-height:1;
+}
+
+.modal-close:hover{
+  color:var(--blue);
+}
+
+.modal-body{
+  padding:20px;
+  overflow-y:auto;
+  color:#d1e3ff;
+  font-size:12px;
+  line-height:1.7;
+}
+
+.modal-body h4{
+  color:#fff;
+  font-size:14px;
+  margin:18px 0 8px 0;
+}
+
+.modal-body h4:first-child{
+  margin-top:0;
+}
+
+.modal-body p{
+  margin-bottom:10px;
+}
+
+.modal-body ul{
+  margin-left:16px;
+  margin-bottom:10px;
+}
+
+.modal-body a{
+  color:#4a90d9;
+  text-decoration:none;
+}
+
+.modal-body a:hover{
+  text-decoration:underline;
+}
 </style>
 </head>
 
 <body>
-<div class="phone">
+<div class=\"phone\">
 
 <header>
-  <div class="logo">O</div>
+  <div class=\"logo\">O</div>
   <div>
     <span>Opexis Digital</span><br>
     <span>Opportunity Nexus</span>
@@ -179,45 +290,45 @@ footer{
 </header>
 
 <!-- CONTATTO -->
-<section class="card">
+<section class=\"card\">
   <h2>Petronilla Pullara</h2>
-  <div class="meta">
-    Email: <a href="mailto:petronillapullara98@gmail.com">petronillapullara98@gmail.com</a><br>
-    Telefono: <a href="tel:+393294697472">+39 329 469 7472</a>
+  <div class=\"meta\">
+    Email: <a href=\"mailto:petronillapullara98@gmail.com\">petronillapullara98@gmail.com</a><br>
+    Telefono: <a href=\"tel:+393294697472\">+39 329 469 7472</a>
   </div>
 
-  <div class="actions">
-    <a class="btn" href="tel:+393294697472"><span class="dot"></span>Chiama</a>
-    <a class="btn" href="mailto:petronillapullara98@gmail.com"><span class="dot"></span>Email</a>
+  <div class=\"actions\">
+    <a class=\"btn\" href=\"tel:+393294697472\"><span class=\"dot\"></span>Chiama</a>
+    <a class=\"btn\" href=\"mailto:petronillapullara98@gmail.com\"><span class=\"dot\"></span>Email</a>
 
-    <a class="btn" href="https://www.facebook.com/share/18Gu7fQdUp/" target="_blank" rel="noopener">
-      <span class="dot"></span>Facebook
+    <a class=\"btn\" href=\"https://www.facebook.com/share/18Gu7fQdUp/\" target=\"_blank\" rel=\"noopener\">
+      <span class=\"dot\"></span>Facebook
     </a>
 
-    <a class="btn" href="https://opexis.digital/?ref=46" target="_blank" rel="noopener">
-      <span class="dot"></span>I nostri Servizi
+    <a class=\"btn\" href=\"https://opexis.digital/?ref=46\" target=\"_blank\" rel=\"noopener\">
+      <span class=\"dot\"></span>I nostri Servizi
     </a>
 
-    <a class="btn" href="https://opexis.digital/prodotto/aboutme-ai-card-servizio/" target="_blank" rel="noopener">
-      <span class="dot"></span>About Me AI Card
+    <a class=\"btn\" href=\"https://opexis.digital/prodotto/aboutme-ai-card-servizio/\" target=\"_blank\" rel=\"noopener\">
+      <span class=\"dot\"></span>About Me AI Card
     </a>
 
-    <button class="btn" onclick="saveContact()"><span class="dot"></span>Salva in rubrica</button>
+    <button class=\"btn\" onclick=\"saveContact()\"><span class=\"dot\"></span>Salva in rubrica</button>
   </div>
 </section>
 
 <!-- HERO -->
-<section class="hero">
+<section class=\"hero\">
   <h1>Il marketing <span>con AI</span></h1>
 
-  <div class="video-box">
-    <video id="introVideo" autoplay playsinline muted>
-      <source src="video_intro.mp4" type="video/mp4">
+  <div class=\"video-box\">
+    <video id=\"introVideo\" autoplay playsinline muted>
+      <source src=\"video_intro.mp4\" type=\"video/mp4\">
     </video>
 
-    <div class="video-controls">
-      <button onclick="enableAudio()">🔊 Attiva audio</button>
-      <button onclick="stopVideo()">⏹ Stop</button>
+    <div class=\"video-controls\">
+      <button onclick=\"enableAudio()\">🔊 Attiva audio</button>
+      <button onclick=\"stopVideo()\">⏹ Stop</button>
     </div>
   </div>
 
@@ -225,27 +336,100 @@ footer{
 </section>
 
 <!-- CTA AI -->
-<section class="cta">
-  <a href="ai.html">💬 Parla con l’AI</a>
+<section class=\"cta\">
+  <a href=\"ai.html\">💬 Parla con l'AI</a>
 </section>
 
 <!-- SOCIAL OPEXIS -->
-<section class="socials">
-  <a class="btn" href="https://www.instagram.com/opexis.digital/" target="_blank" rel="noopener"><span class="dot"></span>Opexis IG</a>
-  <a class="btn" href="https://www.facebook.com/profile.php?id=61580851595121" target="_blank" rel="noopener"><span class="dot"></span>Opexis FB</a>
-  <a class="btn" href="https://www.linkedin.com/company/opexis/" target="_blank" rel="noopener"><span class="dot"></span>LinkedIn</a>
+<section class=\"socials\">
+  <a class=\"btn\" href=\"https://www.instagram.com/opexis.digital/\" target=\"_blank\" rel=\"noopener\"><span class=\"dot\"></span>Opexis IG</a>
+  <a class=\"btn\" href=\"https://www.facebook.com/profile.php?id=61580851595121\" target=\"_blank\" rel=\"noopener\"><span class=\"dot\"></span>Opexis FB</a>
+  <a class=\"btn\" href=\"https://www.linkedin.com/company/opexis/\" target=\"_blank\" rel=\"noopener\"><span class=\"dot\"></span>LinkedIn</a>
 </section>
 
+<!-- TERMINI E CONDIZIONI BUTTON -->
+<button class=\"terms-btn\" onclick=\"openTerms()\">📋 Termini e Condizioni</button>
+
 <footer>
-© <span id="year"></span> Opexis Digital
+© <span id=\"year\"></span> Opexis Digital
 </footer>
 
 </div>
 
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
+<!-- MODAL TERMINI E CONDIZIONI -->
+<div class=\"modal-overlay\" id=\"termsModal\" onclick=\"closeTermsOutside(event)\">
+  <div class=\"modal\" onclick=\"event.stopPropagation()\">
+    <div class=\"modal-header\">
+      <h3>Termini e Condizioni</h3>
+      <button class=\"modal-close\" onclick=\"closeTerms()\">&times;</button>
+    </div>
+    <div class=\"modal-body\">
+      <h4>TERMINI E CONDIZIONI DI UTILIZZO</h4>
+      <p><strong>Landing Page NFC – Opexis</strong></p>
 
-const video = document.getElementById("introVideo");
+      <h4>1. Oggetto del servizio</h4>
+      <p>La presente landing page è associata a una card NFC Opexis e ha finalità informative, di presentazione e di interazione digitale tramite contenuti multimediali e moduli di Intelligenza Artificiale.</p>
+      <p>L'accesso alla landing page avviene tramite tecnologia NFC o collegamento web e consente all'utente di visualizzare contenuti, informazioni e servizi digitali personalizzati.</p>
+
+      <h4>2. Fornitore del servizio NFC</h4>
+      <p>Il fornitore della card NFC e dell'infrastruttura tecnica della landing page è:</p>
+      <p><strong>PERINI GROUP SNC DI PERINI MASSIMO E BRIZZI SARA</strong><br>
+      P. IVA: 02203970518<br>
+      Sede legale: VIA CALAMANDREI, 62/64 – 52100 AREZZO (AR)<br>
+      Sito web: <a href=\"https://www.perinimanagement.it\" target=\"_blank\">www.perinimanagement.it</a><br>
+      Email: <a href=\"mailto:info@perini-group.it\">info@perini-group.it</a></p>
+      <p>PERINI GROUP SNC DI PERINI MASSIMO E BRIZZI SARA fornisce la card NFC, la landing page e l'integrazione tecnica dei servizi digitali, senza intervenire direttamente sui contenuti generati dall'Intelligenza Artificiale.</p>
+
+      <h4>3. Hosting e infrastruttura tecnica</h4>
+      <p>La landing page è ospitata su infrastruttura cloud fornita da Vercel, piattaforma di hosting e distribuzione web.</p>
+      <p>I dati tecnici necessari al funzionamento del servizio (log di accesso, richieste HTTP, dati di rete) sono gestiti secondo i termini e le policy di Vercel, consultabili al seguente indirizzo ufficiale:</p>
+      <p>👉 <a href=\"https://vercel.com/legal\" target=\"_blank\">https://vercel.com/legal</a></p>
+      <p>Utilizzando questa landing page, l'utente accetta implicitamente anche i termini di servizio e l'eventuale EULA di Vercel.</p>
+
+      <h4>4. Modulo di Intelligenza Artificiale (AI)</h4>
+      <p>La landing page può includere un modulo di Intelligenza Artificiale conversazionale basato su Large Language Models (LLM).</p>
+      <p>Il modello linguistico utilizzato è gestito direttamente da Google tramite le proprie infrastrutture e servizi cloud AI.</p>
+      <p>L'elaborazione delle richieste avviene secondo i Termini e Condizioni e le Privacy Policy di Google, consultabili ai seguenti indirizzi ufficiali:</p>
+      <ul>
+        <li><a href=\"https://policies.google.com/terms\" target=\"_blank\">https://policies.google.com/terms</a></li>
+        <li><a href=\"https://policies.google.com/privacy\" target=\"_blank\">https://policies.google.com/privacy</a></li>
+      </ul>
+      <p>PERINI GROUP SNC DI PERINI MASSIMO E BRIZZI SARA e Opexis non hanno controllo diretto sugli algoritmi, sui criteri di addestramento o sulle risposte generate dal modello linguistico.</p>
+
+      <h4>5. Trattamento dei dati personali</h4>
+      <p>Eventuali dati forniti volontariamente dall'utente (ad esempio nome, email, messaggi o richieste) vengono utilizzati esclusivamente per finalità di contatto, risposta o erogazione del servizio richiesto.</p>
+      <p>Non viene effettuata attività di profilazione automatica a fini commerciali, salvo esplicito consenso dell'utente.</p>
+      <p>I dati non vengono ceduti a terzi, fatta eccezione per i fornitori tecnologici indispensabili al funzionamento del servizio (hosting, AI, servizi cloud), nel rispetto delle normative vigenti, incluso il Regolamento UE 2016/679 (GDPR).</p>
+
+      <h4>6. Limitazione di responsabilità</h4>
+      <p>I contenuti forniti tramite la landing page e il modulo AI hanno finalità informative e di supporto.</p>
+      <p>Non costituiscono:</p>
+      <ul>
+        <li>consulenza legale, fiscale, medica o finanziaria</li>
+        <li>offerta contrattuale vincolante</li>
+      </ul>
+      <p>PERINI GROUP SNC DI PERINI MASSIMO E BRIZZI SARA e Opexis non sono responsabili per:</p>
+      <ul>
+        <li>eventuali errori, omissioni o inesattezze generate dal modulo AI</li>
+        <li>decisioni prese dall'utente sulla base delle informazioni fornite</li>
+        <li>interruzioni del servizio dovute a cause tecniche o di forza maggiore</li>
+      </ul>
+
+      <h4>7. Proprietà dei contenuti</h4>
+      <p>Tutti i contenuti grafici, testuali e multimediali presenti nella landing page sono protetti da diritto d'autore, salvo diversa indicazione.</p>
+      <p>È vietata la riproduzione, anche parziale, senza autorizzazione scritta.</p>
+
+      <h4>8. Accettazione dei termini</h4>
+      <p>L'accesso e l'utilizzo della landing page e della card NFC implicano l'accettazione integrale dei presenti Termini e Condizioni.</p>
+      <p>In caso di mancata accettazione, l'utente è invitato a non utilizzare la card NFC e i servizi collegati.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById(\"year\").textContent = new Date().getFullYear();
+
+const video = document.getElementById(\"introVideo\");
 
 function enableAudio(){
   video.muted = false;
@@ -270,17 +454,42 @@ URL:https://opexis.digital/?ref=46
 URL:https://opexis.digital/prodotto/aboutme-ai-card-servizio/
 END:VCARD`;
 
-const blob=new Blob([vcf],{type:"text/vcard"});
+const blob=new Blob([vcf],{type:\"text/vcard\"});
 const url=URL.createObjectURL(blob);
-const a=document.createElement("a");
+const a=document.createElement(\"a\");
 a.href=url;
-a.download="petronilla-pullara.vcf";
+a.download=\"petronilla-pullara.vcf\";
 document.body.appendChild(a);
 a.click();
 a.remove();
 URL.revokeObjectURL(url);
 }
+
+// Modal Termini e Condizioni
+function openTerms(){
+  document.getElementById(\"termsModal\").classList.add(\"active\");
+  document.body.style.overflow = \"hidden\";
+}
+
+function closeTerms(){
+  document.getElementById(\"termsModal\").classList.remove(\"active\");
+  document.body.style.overflow = \"\";
+}
+
+function closeTermsOutside(event){
+  if(event.target === document.getElementById(\"termsModal\")){
+    closeTerms();
+  }
+}
+
+// Chiudi con ESC
+document.addEventListener(\"keydown\", function(e){
+  if(e.key === \"Escape\"){
+    closeTerms();
+  }
+});
 </script>
 
 </body>
 </html>
+"
